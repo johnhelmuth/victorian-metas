@@ -2,7 +2,7 @@
 
 #app {
   font-weight: normal;
-  padding: 1cqw;
+  padding: 2rem 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -8,6 +8,7 @@ Here's a list of documents describing game rules and systems.
 
 * [How I GM Fate](/rules-and-systems/how-i-gm-fate)
 * [Fate rule reference](/rules-and-systems/fate-rules-reference)
+* [Interstitial Scenes](rules-and-systems/interstitial-scenes)
 * [Fate Condensed Skill List for Victorian Era Metapowers](/rules-and-systems/fate-condensed-skill-list-for-victorian-metas)
 
 ## Cheat sheets

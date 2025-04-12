@@ -1,0 +1,40 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+  padding: 1cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background: var(--color-background);
+}
+
+#app > .content-page {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-action-text);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+button {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-action-text);
+    background-color: var(--color-action-background);
+  }
+}
+
+h1, h2 {
+  font-size: 1.25rem;
+}

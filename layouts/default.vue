@@ -5,7 +5,6 @@
 <template>
   <div>
     <header>
-      <DropDownBreadCrumbs :key="$route.path" hide-if-only-one />
       <NuxtLink to="/">Victorian Metapowers</NuxtLink>
     </header>
     <slot />
@@ -19,7 +18,6 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  container: header / inline-size;
 }
 footer {
   font-size: 0.5rem;

@@ -13,6 +13,7 @@ useSeoMeta({
 
 <template>
   <div class="content-block">
+    <DropDownBreadCrumbs :key="$route.path" hide-if-only-one />
     <ContentRenderer v-if="page" :value="page"/>
     <div v-else>Page not found</div>
   </div>

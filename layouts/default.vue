@@ -53,11 +53,14 @@ strong, :deep(strong) {
 blockquote, :deep(blockquote) {
   margin-left: 1rem;
   margin-right: 3rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   border: 1px var(--color-text) solid;
   border-radius: 0.5rem;
 }
-ul :deep(ul) {
+ul, :deep(ul) {
   margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
 }
+
 </style>

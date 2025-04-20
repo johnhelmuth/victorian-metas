@@ -1,28 +1,8 @@
 <script setup lang="ts">
 
-const route = useRoute();
+import {useBreadCrumbs} from "~/composables/use-bread-crumbs";
 
-type crumbType = {name: string, path?: string};
-
-const breadCrumbs = ref([] as Array<crumbType>);
-
-watchEffect(async () => {
-  let pathForCrumb = '';
-  const breadcrumbMeta = route.path.split('/').splice(1)
-      .map((crumb) => {
-        pathForCrumb += ('/' + crumb);
-        return {crumb,pathForCrumb};
-      });
-  breadCrumbs.value = await Promise.all(breadcrumbMeta.map(async (crumbMeta) => {
-    const crumbContent = await queryCollection('content').path(crumbMeta.pathForCrumb).first();
-    const crumb = { name: crumbContent?.title || crumbMeta.crumb } as crumbType;
-    if (crumbContent?.path) {
-      crumb.path = crumbContent.path;
-    }
-    return crumb;
-  }));
-})
-
+const { breadCrumbs } = await useBreadCrumbs();
 
 </script>
 
@@ -30,7 +10,7 @@ watchEffect(async () => {
 <div v-if="breadCrumbs?.length">
   <ul class="breadcrumb-list">
     <li v-for="(breadcrumb, index) in breadCrumbs" :key="`crumb-${index}`" class="breadcrumb-item">
-      <NuxtLink v-if="breadcrumb?.path && index+1 < breadCrumbs.length" :to="breadcrumb.path">
+      <NuxtLink v-if="breadcrumb?.isAPage && index+1 < breadCrumbs.length" :to="breadcrumb.path">
         {{ breadcrumb.name }}
       </NuxtLink>
       <span v-else>{{ breadcrumb.name }}</span>
@@ -42,6 +22,8 @@ watchEffect(async () => {
 <style scoped>
 ul {
   list-style: none;
+  font-size: 1rem;
+  padding: 0;
 }
 li::after {
   content: '>';

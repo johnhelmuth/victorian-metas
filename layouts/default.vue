@@ -1,14 +1,13 @@
 <script setup lang="ts">
-const route = useRoute();
 
 </script>
 
 <template>
   <div>
     <header>
+      <DropDownBreadCrumbs :key="$route.path" hide-if-only-one />
       <NuxtLink to="/">Victorian Metapowers</NuxtLink>
     </header>
-    <div v-if="route.path !=='/'" class="breadcrumb"><BreadCrumbs /></div>
     <slot />
     <footer>Copyright John Helmuth 2025</footer>
   </div>
@@ -20,9 +19,7 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-}
-.breadcrumb {
-  margin-bottom: 0.25rem;
+  container: header / inline-size;
 }
 footer {
   font-size: 0.5rem;

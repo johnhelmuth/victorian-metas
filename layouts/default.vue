@@ -16,12 +16,13 @@ const route = useRoute();
 
 <style scoped>
 header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 .breadcrumb {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 footer {
   font-size: 0.5rem;

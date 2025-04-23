@@ -22,19 +22,17 @@ const showBreadCrumbs = computed(() => {
 </template>
 
 <style scoped>
-.drop-down-bread-crumbs {
-  position: absolute;
-  top: 1.75rem;
-}
+
 .drop-down-trigger {
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
   font-size: 1rem;
   cursor: pointer;
   text-align: left;
 }
 .drop-down-bread-crumbs .bread-crumbs {
   display: none;
+  position: absolute;
   padding: 0.25rem 1rem;
 
   background-color: var(--color-background);

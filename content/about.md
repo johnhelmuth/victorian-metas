@@ -1,4 +1,4 @@
-# About Victorian Metapowers
+# About Aetheric Powers
 
 Not much here yet.
 

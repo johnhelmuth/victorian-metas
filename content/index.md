@@ -1,5 +1,5 @@
 ---
-title: Welcome to Victorian Metapowers
+title: Welcome
 ---
 
 This site is the notes and documentation for a new RPG Campaign using the Fate Core system.

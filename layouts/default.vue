@@ -1,11 +1,14 @@
 <script setup lang="ts">
+defineProps<{ site_title: string, page_title: string}>();
 
 </script>
 
 <template>
   <div>
     <header>
-      <NuxtLink to="/">Victorian Metapowers</NuxtLink>
+      <div class="home-link"><NuxtLink to="/">{{site_title}}</NuxtLink></div>
+      <h1>{{ page_title }}</h1>
+      <DropDownBreadCrumbs :key="$route.path" hide-if-only-one />
     </header>
     <slot />
     <footer>Copyright John Helmuth 2025</footer>

@@ -1,7 +1,6 @@
 <script setup>
 
 const SITE_TITLE = 'The Aetherions';
-
 const page_title=ref('');
 
 useHead({

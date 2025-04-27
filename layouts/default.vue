@@ -1,12 +1,18 @@
 <script setup lang="ts">
-defineProps<{ site_title: string, page_title: string}>();
+import ShieldKnotLogo from "~/components/shield-knot-logo.vue";
+
+defineProps<{ site_title: string, page_title: string }>();
 
 </script>
 
 <template>
   <div>
     <header>
-      <div class="home-link"><NuxtLink to="/">{{site_title}}</NuxtLink></div>
+      <div class="home-link">
+        <NuxtLink to="/"><ShieldKnotLogo/></NuxtLink>
+        <NuxtLink to="/">{{site_title}}</NuxtLink>
+        <div class="hamburger-placeholder">&nbsp;</div>
+      </div>
       <h1>{{ page_title }}</h1>
       <DropDownBreadCrumbs :key="$route.path" hide-if-only-one />
     </header>
@@ -21,6 +27,16 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+}
+header div.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+header div.home-link .hamburger-placeholder {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 footer {
   font-size: 0.5rem;

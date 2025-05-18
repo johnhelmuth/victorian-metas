@@ -31,7 +31,7 @@ Lieutenant of his father Sean, heir apparent, cold blooded killer.
 
 ### Emil Blondel
 
-Unscrupulous private eye who is following up on rumours about the death of the courtesan Mary Coman. Whispers on the streets is that the Thorinson Family was involved, and he is trying to find proof so he can either blackmail the Thorinsons or suppress it as a favor to them.  He has not been contacted by the Thorinson family.
+Unscrupulous private eye who has an interest in talking to Alastar Gaffney.
 
 * ***Sleazy private eye***
 * ***Kicked out of the Pinkertons for inattention to detail.***

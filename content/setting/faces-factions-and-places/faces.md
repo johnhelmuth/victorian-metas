@@ -1,5 +1,5 @@
 ---
-title: People and Factions of the world of the Aetherions
+title: Faces
 ---
 
 ## Regarding surnames
@@ -83,24 +83,3 @@ Jarl Hafthor Thorsaet’s youngest daughter.
 ### The White Rose
 
 A mysterious individual (he or she?) who delivers pertinent information to commoner aetheric groups, chased by the nobility. Tradmark is a white rose, which makes it easy for copycats, complicating the difficulty of the nobility.
-
-## Organizations and Factions
-
-### Blackstone Family
-
-Crime family, former family for Maeve Murry.
-
-### Clan Thorsait
-
-Powerful nordic clan led by Jarl Hafthor
-
-### Dyflin Tribune
-
-Respected daily newspaper.
-
-### Tidefast Security (Blackcoats)
-
-Don’t call them Blackcoats to their faces unless you want them angry at you.
-
-Security agency whose highly skilled teams of agents work for the highest bidder, usually the noble clans of Dyflin.
-

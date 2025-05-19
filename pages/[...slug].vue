@@ -18,9 +18,3 @@ useSeoMeta({
     <div v-else>Page not found</div>
   </div>
 </template>
-
-<style scoped>
-.content-block {
-  overflow-y: auto;
-}
-</style>

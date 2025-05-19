@@ -29,7 +29,7 @@
   --vt-c-amber-mute: hsl(45 80% 75%);
   --vt-c-amber-lightest: hsl(45 85% 80%);
   --vt-c-amber-brightest: hsl(45 90% 95%);
-
+  --parchment-background: #fffef0;
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
@@ -43,35 +43,26 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-  --color-background-lightest: var(--vt-c-white-lightest);
-
-  --color-background-inverted: var(--vt-c-black);
-  --color-background-inverted-mute: var(--vt-c-black-mute);
+  --color-background: var(--vt-c-amber-brightest);
+  --color-background-soft: var(--vt-c-amber-soft);
+  --color-background-mute: var(--vt-c-amber-mute);
+  --color-background-lightest: var(--vt-c-amber-lightest);
 
   --color-scrollbar-track: var(--color-background-mute);
   --color-scrollbar-thumb: var(--color-background-lightest);
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-  --color-border-inverted: var(--vt-c-amber-dull);
-  --color-border-hover-inverted: var(--vt-c-amber-dull);
+  --color-border: var(--vt-c-amber-dull);
+  --color-border-hover: var(--vt-c-amber-soft);
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
   --color-text-lightest: var(--vt-c-text-light-2);
-  --color-text-inverted: var(--vt-c-amber-brightest);
-  --color-text-inverted-lightest: var(--vt-c-amber-dark);
 
   --section-gap: 160px;
 
   --color-action-background: var(--vt-c-text-light-1);
-  --color-action-background-inverted: var(--vt-c-amber-dark);
   --color-action-hover: var(--vt-c-green-lightest);
   --color-action-text: var(--vt-c-indigo-soft);
-  --color-action-text-inverted: var(--vt-c-amber-lightest);
 
   --color-highlight: var(--vt-c-indigo-lightest);
 
@@ -84,10 +75,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-    --color-background-lightest: var(--vt-c-black-lightest);
+    --color-background: var(--vt-c-amber-dark);
+    --color-background-soft: var(--vt-c-amber-dull);
+    --color-background-mute: var(--vt-c-amber-mute);
+    --color-background-lightest: var(--vt-c-amber-soft);
 
     --color-border: var(--vt-c-divider-dark-2);
     --color-border-hover: var(--vt-c-divider-dark-1);
@@ -135,23 +126,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: clamp(1rem, 1cqw, 1.5rem);
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar#adding_a_fallback_for_scrollbar_styles */
-/* For browsers that support `scrollbar-*` properties */
-@supports (scrollbar-color: auto) {
-  body {
-    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
-  }
-}
-/* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
-@supports selector(::-webkit-scrollbar) {
-  body::-webkit-scrollbar, *::-webkit-scrollbar {
-    background: var(--color-scrollbar-track);
-  }
-  body::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
-    background: var(--color-scrollbar-thumb);
-  }
 }
 
 html {
